@@ -1,3 +1,8 @@
 export default function Brand() {
-  return "brand";
+  return (
+    <div className="w-full, h-screen">
+      <Seo title="About" />
+      <h1>brand</h1>
+    </div>
+  );
 }
