@@ -1,6 +1,9 @@
+import Seo from "../components/Seo";
+
 export default function Connect() {
   return (
     <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font relative">
+      <Seo title="connect" />
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
@@ -14,7 +17,10 @@ export default function Connect() {
           <div className="flex flex-wrap -m-2">
             <div className="p-2 w-1/2">
               <div className="relative">
-                <label for="name" className="leading-7 text-sm text-gray-600">
+                <label
+                  htmlFor="name"
+                  className="leading-7 text-sm text-gray-600"
+                >
                   성함
                 </label>
                 <input
@@ -28,7 +34,7 @@ export default function Connect() {
             <div className="p-2 w-1/2">
               <div className="relative">
                 <label
-                  for="phoneNb"
+                  htmlFor="phoneNb"
                   className="leading-7 text-sm text-gray-600"
                 >
                   전화번호
@@ -44,7 +50,7 @@ export default function Connect() {
             <div className="p-2 w-full">
               <div className="relative">
                 <label
-                  for="message"
+                  htmlFor="message"
                   className="leading-7 text-sm text-gray-600"
                 >
                   문의내용

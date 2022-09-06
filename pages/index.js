@@ -15,27 +15,24 @@ export default function Home() {
     });
     console.log(page);
   }
-  function onMove() {
-    window.addEventListener(
-      "wheel",
-      function (e) {
-        e.preventDefault();
-        if (e.deltaY > 0) {
-          if (page == 5) return;
-          setPage(page + 1);
-        } else if (e.deltaY < 0) {
-          if (page == 1) return;
-          setPage(page - 1);
-        }
-      },
-      { passive: false }
-    );
-    onScroll();
-  }
 
   useEffect(() => {
     setTimeout(() => {
-      onMove();
+      window.addEventListener(
+        "wheel",
+        function (e) {
+          e.preventDefault();
+          if (e.deltaY > 0) {
+            if (page == 5) return;
+            setPage(page + 1);
+          } else if (e.deltaY < 0) {
+            if (page == 1) return;
+            setPage(page - 1);
+          }
+        },
+        { passive: false }
+      );
+      onScroll();
     }, 500);
   }, [onScroll]);
   return (
