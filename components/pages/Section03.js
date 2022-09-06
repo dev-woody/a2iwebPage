@@ -50,7 +50,7 @@ export default function Section03() {
               <p className="leading-relaxed">
                 웹부터 앱까지
                 <br />
-                인터렉션한 디자인
+                인터랙션한 디자인
               </p>
             </div>
           </div>
