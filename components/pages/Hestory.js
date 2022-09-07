@@ -52,13 +52,13 @@ export default function Hestory() {
               );
             })}
           </div>
-          <div className="lg:w-3/5 lg:h-auto md:w-1/2 md:h-auto object-cover object-center rounded-lg md:mt-0 mt-12">
-            <Image
+          <div className="lg:w-3/5 lg:h-auto md:w-1/2 md:h-auto object-cover object-center rounded-lg md:mt-0 mt-12 bg-gray-200">
+            {/* <Image
               className="lg:w-3/5 lg:h-auto md:w-1/2 md:h-auto object-cover object-center rounded-lg md:mt-0 mt-12"
               src={HestoryImg}
               width="1000"
               height="1080"
-            />
+            /> */}
           </div>
         </div>
       </div>
