@@ -28,10 +28,14 @@ export default function Home() {
       }
       onScroll();
     };
-    window.addEventListener("whell", onMove);
-    return () => {
-      window.removeEventListener("wheel", onMove);
-    };
+    window.addEventListener(
+      "whell",
+      function (e) {
+        onMove(e);
+      },
+      { passive: false }
+    );
+    return () => window.removeEventListener("wheel", onMove);
   }, [onScroll]);
   return (
     <div>

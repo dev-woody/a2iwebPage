@@ -12,9 +12,9 @@ export default function Members() {
           />
           <div className="flex-grow sm:pl-8">
             <h2 className="title-font font-medium text-lg text-gray-900">
-              {name}
+              {title}
             </h2>
-            <h3 className="text-gray-500 mb-3">{title}</h3>
+            <h3 className="text-gray-500 mb-3"></h3>
             {careers.map((career) => {
               return (
                 <>
@@ -43,7 +43,7 @@ export default function Members() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  classNameName="w-5 h-5"
+                  className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
