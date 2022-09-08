@@ -14,8 +14,8 @@ export default function AboutUs() {
           <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
             <svg
               fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               xmlns="http://www.w3.org/2000/svg"
               className="sm:w-16 sm:h-16 w-10 h-10"
               viewBox="0 0 24 24"
@@ -49,8 +49,8 @@ export default function AboutUs() {
           <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
             <svg
               fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               xmlns="http://www.w3.org/2000/svg"
               className="sm:w-16 sm:h-16 w-10 h-10"
               viewBox="0 0 24 24"
@@ -64,8 +64,8 @@ export default function AboutUs() {
           <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
             <svg
               fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               xmlns="http://www.w3.org/2000/svg"
               className="sm:w-16 sm:h-16 w-10 h-10"
               viewBox="0 0 24 24"
