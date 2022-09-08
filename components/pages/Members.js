@@ -93,11 +93,6 @@ export default function Members() {
               </>
             );
           })}
-          {/* <Profile
-            name="Alex&nbsp;Park"
-            title="CEO"
-            career="전&nbsp;&#40;주&#41;&nbsp;닷투비&nbsp;대표이사&#10;전 삼성계열개발자"
-          /> */}
         </div>
       </div>
     </section>

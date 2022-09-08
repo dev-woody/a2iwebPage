@@ -34,7 +34,7 @@ export default function Home() {
       );
       onScroll();
       return () => {
-        removeEventListener("wheel");
+        window.removeEventListener("wheel");
       };
     }, 500);
   }, [onScroll]);
