@@ -17,26 +17,21 @@ export default function Home() {
   }
 
   useEffect(() => {
-    setTimeout(() => {
-      window.addEventListener(
-        "wheel",
-        function (e) {
-          e.preventDefault();
-          if (e.deltaY > 0) {
-            if (page == 5) return;
-            setPage(page + 1);
-          } else if (e.deltaY < 0) {
-            if (page == 1) return;
-            setPage(page - 1);
-          }
-        },
-        { passive: false }
-      );
+    const onMove = (e) => {
+      e.preventDefault();
+      if (e.deltaY > 0) {
+        if (page == 5) return;
+        setPage(page + 1);
+      } else if (e.deltaY < 0) {
+        if (page == 1) return;
+        setPage(page - 1);
+      }
       onScroll();
-      return () => {
-        window.removeEventListener("wheel");
-      };
-    }, 500);
+    };
+    window.addEventListener("whell", onMove);
+    return () => {
+      window.removeEventListener("wheel", onMove);
+    };
   }, [onScroll]);
   return (
     <div>
