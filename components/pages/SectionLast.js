@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function SectionLast() {
   return (
     <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font relative">
@@ -19,9 +21,11 @@ export default function SectionLast() {
           </h2>
         </div>
         <div className="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
-          <button className="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">
-            연락하기
-          </button>
+          <Link href="/connect">
+            <button className="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">
+              연락하기
+            </button>
+          </Link>
         </div>
       </div>
     </section>

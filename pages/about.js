@@ -5,7 +5,7 @@ import Seo from "../components/Seo";
 
 export default function About() {
   return (
-    <div classNameName="w-full, h-screen">
+    <div classNameName="w-full min-h-screen">
       <Seo title="About" />
       <AboutUs />
       <History />
