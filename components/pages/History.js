@@ -12,8 +12,8 @@ export default function History() {
         <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
           {icon}
         </div>
-        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h2 class="font-medium title-font text-gray-800 mb-1 text-xl">
+        <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 className="font-medium title-font text-gray-800 mb-1 text-xl">
             {years}
           </h2>
           <p className="leading-relaxed text-gray-400">{text}</p>
