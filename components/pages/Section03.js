@@ -18,7 +18,7 @@ export default function Section03() {
             <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
               <svg
                 fill="currentColor"
-                className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                className="text-primary-color w-12 h-12 mb-3 inline-block"
                 viewBox="0 0 24 24"
               >
                 <path d="M9 21c0 .5.4 1 1 1h4c.6 0 1-.5 1-1v-1H9v1zm3-19C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .5.4 1 1 1h6c.6 0 1-.5 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7z" />
@@ -37,7 +37,7 @@ export default function Section03() {
             <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
               <svg
                 fill="currentColor"
-                className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                className="text-primary-color w-12 h-12 mb-3 inline-block"
                 viewBox="0 0 24 24"
               >
                 <g>
@@ -58,7 +58,7 @@ export default function Section03() {
             <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
               <svg
                 fill="currentColor"
-                className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                className="text-primary-color w-12 h-12 mb-3 inline-block"
                 viewBox="0 0 24 24"
               >
                 <g>
@@ -80,7 +80,7 @@ export default function Section03() {
             <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
               <svg
                 fill="currentColor"
-                className="text-indigo-500 w-12 h-12 mb-3 inline-block"
+                className="text-primary-color w-12 h-12 mb-3 inline-block"
                 viewBox="0 0 24 24"
               >
                 <path d="M11,14H9c0-4.97,4.03-9,9-9v2C14.13,7,11,10.13,11,14z M18,11V9c-2.76,0-5,2.24-5,5h2C15,12.34,16.34,11,18,11z M7,4 c0-1.11-0.89-2-2-2S3,2.89,3,4s0.89,2,2,2S7,5.11,7,4z M11.45,4.5h-2C9.21,5.92,7.99,7,6.5,7h-3C2.67,7,2,7.67,2,8.5V11h6V8.74 C9.86,8.15,11.25,6.51,11.45,4.5z M19,17c1.11,0,2-0.89,2-2s-0.89-2-2-2s-2,0.89-2,2S17.89,17,19,17z M20.5,18h-3 c-1.49,0-2.71-1.08-2.95-2.5h-2c0.2,2.01,1.59,3.65,3.45,4.24V22h6v-2.5C22,18.67,21.33,18,20.5,18z" />

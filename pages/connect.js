@@ -33,7 +33,7 @@ export default function Connect() {
                   name="name"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
-                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-primary-color focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
@@ -51,7 +51,7 @@ export default function Connect() {
                   name="phoneNb"
                   value={phoneNum}
                   onChange={(e) => setPhoneNum(e.target.value)}
-                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-primary-color focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
@@ -68,12 +68,12 @@ export default function Connect() {
                   name="message"
                   value={body}
                   onChange={(e) => setBody(e.target.value)}
-                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-primary-color focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 ></textarea>
               </div>
             </div>
             <div className="p-2 w-full">
-              <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <button className="flex mx-auto text-white bg-primary-color border-0 py-2 px-8 focus:outline-none hover:bg-secondary-color rounded text-lg duration-300">
                 <a
                   href={
                     "mailto:ceo.alexpark@a2ikorea.com?body=" +
@@ -91,7 +91,7 @@ export default function Connect() {
             </div>
             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
               <a
-                className="text-indigo-500"
+                className="text-primary-color"
                 href={
                   "mailto:ceo.alexpark@a2ikorea.com?body=" +
                   `${body}` +

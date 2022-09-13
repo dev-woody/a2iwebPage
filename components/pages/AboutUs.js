@@ -7,11 +7,11 @@ export default function AboutUs() {
             About Us
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            혁신과 함께하는 기업, A2I Korea
+            혁신과 함께하는 기업, A2I Inc.
           </p>
         </div>
         <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-          <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+          <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-secondary-color text-primary-color flex-shrink-0">
             <svg
               fill="currentColor"
               strokeLinecap="round"
@@ -48,7 +48,7 @@ export default function AboutUs() {
               사회문화에 영향을 미친다.
             </p>
           </div>
-          <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+          <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-secondary-color text-primary-color flex-shrink-0">
             <svg
               fill="currentColor"
               strokeLinecap="round"
@@ -63,7 +63,7 @@ export default function AboutUs() {
           </div>
         </div>
         <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
-          <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+          <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-secondary-color text-primary-color flex-shrink-0">
             <svg
               fill="currentColor"
               strokeLinecap="round"

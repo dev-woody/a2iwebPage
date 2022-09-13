@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "/public/LogoGray.svg";
 
 export default function Footer() {
   return (
@@ -7,17 +8,17 @@ export default function Footer() {
         <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
           <Link href="/">
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              <span className="ml-3 text-xl">A2I korea</span>
+              <Logo className="ml-3 w-5" />
             </a>
           </Link>
           <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
-            © 2021 A2I korea —
+            © 2021 A2I Inc. —
             <a
               rel="noopener noreferrer"
               className="text-gray-600 ml-1"
               target="_blank"
             >
-              @A2I korea
+              @A2I Inc.
             </a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">

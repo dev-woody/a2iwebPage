@@ -1,15 +1,11 @@
 import { members } from "../../lib/members";
 
 export default function Members() {
-  const Profile = ({ name, title, careers }) => {
+  const Profile = ({ name, img, title, careers }) => {
     return (
       <div className="p-4 lg:w-1/2">
         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img
-            alt="team"
-            className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-            src="https://dummyimage.com/200x200"
-          />
+          <div className="w-48 h-48">{img}</div>
           <div className="flex-grow sm:pl-8">
             <h2 className="title-font font-medium text-lg text-gray-900">
               {title}
@@ -80,12 +76,13 @@ export default function Members() {
             A2I Korea는 각 분야의 전문가와 함께합니다.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap lg:-m-4 md:m-0 justify-center">
           {members.map((member, index) => {
             return (
               <>
                 <Profile
                   key={index}
+                  img={member.img}
                   name={member.name}
                   title={member.title}
                   careers={member.career}

@@ -13,16 +13,16 @@ export default function SectionLast() {
           <p className="leading-relaxed mt-4 mb-4">
             UI/UX 기획부터 앱 개발까지... 혁신적인 고객경험을 제공합니다.
           </p>
-          <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+          <h2 className="text-xs text-primary-color tracking-widest font-medium title-font mb-1">
             이메일 : ceo.alexpark@a2ikorea.com
           </h2>
-          <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+          <h2 className="text-xs text-primary-color tracking-widest font-medium title-font mb-1">
             전화번호 : 010-5007-0844
           </h2>
         </div>
         <div className="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
           <Link href="/connect">
-            <button className="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">
+            <button className="flex-shrink-0 text-white bg-primary-color border-0 py-2 px-8 focus:outline-none hover:bg-secondary-color rounded text-lg mt-10 sm:mt-0 duration-500">
               연락하기
             </button>
           </Link>
