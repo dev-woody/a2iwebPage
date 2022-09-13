@@ -47,7 +47,13 @@ export default function History() {
             })}
           </div>
           <div className="lg:w-3/5 md:w-1/2 rounded-lg md:mt-0 mt-12">
-            <Image src={historyImg} objectFit="cover" objectPosition="center" />
+            <Image
+              src={historyImg}
+              objectFit="cover"
+              objectPosition="center"
+              placeholder="blur"
+              blurDataURL={historyImg}
+            />
           </div>
         </div>
       </div>
