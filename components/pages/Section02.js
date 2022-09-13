@@ -8,7 +8,7 @@ export default function Section02() {
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <INPAL />
         </div>
-        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex justify-end md:items-center md:text-left items-center text-center">
+        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex justify-center md:items-center md:text-left items-center text-center">
           <div className="flex flex-col">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               INPAL
