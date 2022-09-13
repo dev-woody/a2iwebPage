@@ -31,8 +31,8 @@ export default function AboutUs() {
               비젼
             </h2>
             <p className="leading-relaxed text-base">
-              Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-              taxidermy. Gastropub indxgo juice poutine.
+              인공지능 솔루션을 기반으로 고객의 취향이 존중되어 고객이 원하는
+              서비스를 즉시 제공 받을 수 있는 사회문화 기술을 구현
             </p>
           </div>
         </div>
@@ -42,8 +42,10 @@ export default function AboutUs() {
               사명
             </h2>
             <p className="leading-relaxed text-base">
-              Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-              taxidermy. Gastropub indxgo juice poutine.
+              AI for Improvement and Infuence.
+              <br />
+              인공지능 솔루션 개발을 통해서 인루 삶의 질을 향상 시키고,
+              사회문화에 영향을 미친다.
             </p>
           </div>
           <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
@@ -78,8 +80,8 @@ export default function AboutUs() {
               핵심가치
             </h2>
             <p className="leading-relaxed text-base">
-              Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-              taxidermy. Gastropub indxgo juice poutine.
+              소비자와 기업간의 직접거래를 통한 비용절감 및 소비자의 개인 취향을
+              존중
             </p>
           </div>
         </div>
