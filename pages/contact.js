@@ -19,7 +19,7 @@ export default function Contact() {
           marginWidth="0"
           title="map"
           scrolling="no"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25420.77523476185!2d127.02377487910155!3d37.20980269999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b4591e60e39c9%3A0xf213be3907963ce3!2z66mU6rCA67mE7KaI7YOA7JuMQg!5e0!3m2!1sko!2skr!4v1663202815158!5m2!1sko!2skr"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.5428371955086!2d127.10023299999999!3d37.2110866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b45feaa3deb4f%3A0xac44e7a2a7f49153!2sA2I!5e0!3m2!1sko!2skr!4v1663205672403!5m2!1sko!2skr"
           style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
         ></iframe>
       </div>
