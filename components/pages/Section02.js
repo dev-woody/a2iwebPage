@@ -15,7 +15,7 @@ export default function Section02() {
               <br className="hidden lg:inline-block" />
             </h1>
             <p className="mb-8 leading-relaxed">
-              인테리어 중계플랫폼,
+              인테리어 중개플랫폼,
               <br className="hidden lg:inline-block" />
               인공지능을 품다.
             </p>

@@ -4,13 +4,14 @@ export default function Section03() {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-            혁신을 바탕으로 솔루션을 제공하다.
+            혁신을 바탕으로 인공지능 솔루션을 제공하다.
           </h1>
+          <h2 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+            AI solution for Improvement and InFluence
+          </h2>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably
-            haven&#39;t heard of them man bun deep jianbing selfies heirloom
-            prism food truck ugh squid celiac humblebrag.
+            Improve the quality of mankind life and influence on social culture
+            through the developmnt of AI solution
           </p>
         </div>
         <div className="flex flex-wrap -m-4 text-center">

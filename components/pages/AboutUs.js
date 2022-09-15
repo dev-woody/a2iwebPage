@@ -32,7 +32,7 @@ export default function AboutUs() {
             </h2>
             <p className="leading-relaxed text-base">
               인공지능 솔루션을 기반으로 고객의 취향이 존중되어 고객이 원하는
-              서비스를 즉시 제공 받을 수 있는 사회문화 기술을 구현
+              서비스를 즉시 제공 받을 수 있는 사회문화 기술을 구현한다.
             </p>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function AboutUs() {
             <p className="leading-relaxed text-base">
               AI for Improvement and Infuence.
               <br />
-              인공지능 솔루션 개발을 통해서 인루 삶의 질을 향상 시키고,
+              인공지능 솔루션 개발을 통해서 인류 삶의 질을 향상 시키고,
               사회문화에 영향을 미친다.
             </p>
           </div>

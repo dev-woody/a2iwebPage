@@ -20,9 +20,9 @@ export default function Header() {
           <Link href="/brand">
             <a className="mr-5 hover:text-primary-color duration-500">Brand</a>
           </Link>
-          <Link href="/connect">
+          <Link href="/contact">
             <a className="mr-5 hover:text-primary-color duration-500">
-              Connect
+              Contact
             </a>
           </Link>
         </nav>
