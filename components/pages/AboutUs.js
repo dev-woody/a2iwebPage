@@ -42,7 +42,7 @@ export default function AboutUs() {
               사명
             </h2>
             <p className="leading-relaxed text-base">
-              AI for Improvement and Infuence.
+              AI solution for Improvement and Infuence.
               <br />
               인공지능 솔루션 개발을 통해서 인류 삶의 질을 향상 시키고,
               사회문화에 영향을 미친다.

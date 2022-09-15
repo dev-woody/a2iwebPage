@@ -73,7 +73,7 @@ export default function Members() {
             OUR TEAM
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            A2I Korea는 각 분야의 전문가와 함께합니다.
+            A2I Inc.는 각 분야의 전문가와 함께합니다.
           </p>
         </div>
         <div className="flex flex-wrap lg:-m-4 md:m-0 justify-center">

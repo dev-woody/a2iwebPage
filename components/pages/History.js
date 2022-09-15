@@ -29,7 +29,7 @@ export default function History() {
             History
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            A2I Korea는 꾸준히 한걸음씩 성장해 나가고 있습니다.
+            A2I Inc.는 꾸준히 한걸음씩 성장해 나가고 있습니다.
           </p>
         </div>
         <div className="flex flex-wrap w-full lg:overflow-hidden md:overflow-auto lg:h-2/3 md:h-auto">
