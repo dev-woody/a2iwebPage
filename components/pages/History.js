@@ -1,6 +1,6 @@
 import { historys } from "../../lib/historys";
 import Image from "next/image";
-import historyImg from "/public/historyImg.jpg";
+import historyImg from "/public/image/historyImg.jpg";
 
 export default function History() {
   const History = ({ years, text, icon }) => {

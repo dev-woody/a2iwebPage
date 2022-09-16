@@ -1,5 +1,5 @@
 import Seo from "../components/Seo";
-import INPAL from "/public/icon-logo.svg";
+import INPAL from "/public/image/icon-logo.svg";
 
 export default function Brand() {
   return (
