@@ -3,8 +3,8 @@ import Lottie from "react-lottie-player";
 // Alternatively:
 // import Lottie from 'react-lottie-player/dist/LottiePlayerLight'
 
-import lottieJson from "/public/image/gradation.json";
+import lottieJson from "/public/image/galaxy.json";
 
 export default function Animation() {
-  return <Lottie loop animationData={lottieJson} play />;
+  return <Lottie loop animationData={lottieJson} play className="z-0" />;
 }

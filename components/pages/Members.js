@@ -1,95 +1,120 @@
-import { members } from "../../lib/members";
+import CEO from "/public/image/ceo.svg";
+import CTO from "/public/image/cto.svg";
+import CCO from "/public/image/cco.svg";
+import Advice1 from "/public/image/Advice1.svg";
+import Advice2 from "/public/image/Advice2.svg";
+import Frontend from "/public/image/frontend.svg";
 
 export default function Members() {
-  const Profile = ({ name, img, title, careers }) => {
-    return (
-      <div className="p-4 lg:w-1/2">
-        <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <div className="w-48 h-48">{img}</div>
-          <div className="flex-grow sm:pl-8">
-            <h2 className="title-font font-medium text-lg text-gray-900">
-              {title}
-            </h2>
-            <h3 className="text-gray-500 mb-3"></h3>
-            {careers.map((career) => {
-              return (
-                <>
-                  <p className="mb-1">{career}</p>
-                </>
-              );
-            })}
-            <span className="inline-flex mt-2">
-              <a className="text-gray-500">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a className="ml-2 text-gray-500">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-              </a>
-              <a className="ml-2 text-gray-500">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
+  return (
+    <section className="text-white body-font bg-black pb-44">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="lg:w-2/3 flex flex-col items-start mb-20 text-left">
+          <h1 className="title-font sm:text-6xl text-3xl mb-4 font-medium text-white text-left">
+            Our Team
+          </h1>
+          <h1 className="flex-grow sm:pr-16 text-2xl sm:text-4xl font-medium title-font text-white">
+            A2I Inc.는
+            <span className="text-primary-color">
+              &nbsp;각 분야의 10년 이상 전문가와 함께 합니다.
             </span>
+          </h1>
+        </div>
+        <div className="flex items-center justify-center lg:w-full mx-auto  pb-10 mb-20 sm:flex-row flex-col">
+          <CEO className="sm:w-72 sm:h-72 h-24 w-24 sm:mr-40 inline-flex items-center justify-center flex-shrink-0" />
+          <div className=" sm:text-left text-center mt-6 sm:mt-0">
+            <h2 className=" text-lg sm:text-5xl title-font font-medium mb-2">
+              CEO
+            </h2>
+            <h2 className=" text-lg sm:text-4xl title-font font-medium mb-2 sm:mb-10">
+              “항상 변화를 받아들일 줄 알아야 한다.”
+            </h2>
+            <p className="leading-relaxed text-base sm:text-2xl">
+              前 (주) 닷투비 대표이사
+              <br />前 삼성계열사 개발자
+            </p>
           </div>
         </div>
-      </div>
-    );
-  };
-  return (
-    <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-col text-center w-full mb-20">
-          <h1 className="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">
-            OUR TEAM
-          </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            A2I Inc.는 각 분야의 전문가와 함께합니다.
-          </p>
+        <div className="flex items-center justify-center lg:w-full mx-auto pb-10 mb-20 sm:flex-row flex-col">
+          <div className=" sm:text-right text-center mt-6 sm:mt-0">
+            <h2 className=" text-lg sm:text-5xl title-font font-medium mb-2 ">
+              CTO
+            </h2>
+            <h2 className=" text-lg sm:text-4xl title-font font-medium mb-2 sm:mb-10">
+              “컴퓨터는 거짓말을 하지않는다.”
+            </h2>
+            <p className="leading-relaxed text-base sm:text-2xl">
+              소프트웨어 경력 20년
+              <br />
+              정보통신공학 석사
+              <br />
+              어플리케이션 프로그램 개발
+            </p>
+          </div>
+          <CTO className="sm:w-72 sm:h-72 h-20 w-20 sm:ml-40 inline-flex items-center justify-center flex-shrink-0" />
         </div>
-        <div className="flex flex-wrap lg:-m-4 md:m-0 justify-center">
-          {members.map((member, index) => {
-            return (
-              <>
-                <Profile
-                  key={index}
-                  img={member.img}
-                  name={member.name}
-                  title={member.title}
-                  careers={member.career}
-                />
-              </>
-            );
-          })}
+        <div className="flex items-center justify-center lg:w-full mx-auto pb-10 mb-20 sm:flex-row flex-col">
+          <CCO className="sm:w-72 sm:h-72 h-20 w-20 sm:mr-40 inline-flex items-center justify-center flex-shrink-0" />
+          <div className=" sm:text-left text-center mt-6 sm:mt-0">
+            <h2 className=" text-lg sm:text-5xl title-font font-medium mb-2">
+              CCO
+            </h2>
+            <h2 className="0 text-lg sm:text-4xl title-font font-medium mb-2 sm:mb-10">
+              “다양한 시각으로 바라보고 생각해라.”
+            </h2>
+            <p className="leading-relaxed text-base sm:text-2xl">
+              네트워크 솔루션 제안 및 응용
+              <br />
+              네트워크 솔루션 개발 경력 20년
+              <br />
+              정보통신공학 학사
+            </p>
+          </div>
+        </div>
+        <div className="flex sm:my-20 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6 ">
+          <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <Frontend className="w-48 h-48 inline-flex items-center justify-center mb-5 flex-shrink-0" />
+            <div className="flex-grow">
+              <h2 className="text-3xl title-font font-medium mb-3">
+                Frontend Dev, UI/UX Designer
+              </h2>
+              <p className="leading-relaxed text-base">
+                React, Next.js 개발자
+                <br />
+                일러스트, 포토샵 등 편집툴 사용
+                <br />
+                프리미어 프로, 에프터 이펙트 영상편집
+              </p>
+            </div>
+          </div>
+          <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <Advice1 className="w-48 h-48 inline-flex items-center justify-center mb-5 flex-shrink-0" />
+            <div className="flex-grow">
+              <h2 className="text-3xl title-font font-medium mb-3">
+                인테리어 자문 1
+              </h2>
+              <p className="leading-relaxed text-base">
+                홍익대학교 공간디자인 박사
+                <br />
+                공간디자인학회
+                <br />
+                사무총장/ 모대학교 겸임교수
+              </p>
+            </div>
+          </div>
+          <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <Advice2 className="w-48 h-48 inline-flex items-center justify-center mb-5 flex-shrink-0" />
+            <div className="flex-grow">
+              <h2 className="text-3xl title-font font-medium mb-3">
+                인테리어 자문 2
+              </h2>
+              <p className="leading-relaxed text-base">
+                대형 건설사 인테리어 설계 리더
+                <br />
+                홍익대학교 공간디자인 박사 과정
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -2,7 +2,10 @@ import Link from "next/link";
 
 export default function SectionLast() {
   return (
-    <section className="flex min-h-screen h-screen flex-col items-center justify-center body-font snap-start">
+    <section
+      className="flex min-h-screen h-screen flex-col items-center justify-center body-font "
+      data-aos="fade-up"
+    >
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col items-center justify-center lg:w-3/5 mx-auto text-white text-center h-full w-screen">
           <h1 className="md:text-5xl text-2xl font-medium title-font ">

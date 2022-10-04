@@ -9,11 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lottiefiles/lottie-interactivity": "^1.6.1",
+    "@lottiefiles/lottie-player": "^1.5.7",
+    "aos": "^3.0.0-beta.6",
     "next": "12.2.5",
-    "next-images": "^1.8.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-lottie-player": "^1.4.3"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.3.1",

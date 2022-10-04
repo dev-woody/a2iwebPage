@@ -20,7 +20,7 @@ export default function Header() {
             <Logo className="ml-3 mr-3 h-8" />
           </a>
         </Link>
-        <nav className="md:ml-auto md:w-1/3 flex items-center text-base justify-evenly ease-in-out">
+        <nav className="md:ml-auto md:w-1/4 flex items-center text-base justify-between ease-in-out">
           <Link href="/about">
             <a className=" hover:text-primary-color ">About us</a>
           </Link>

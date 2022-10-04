@@ -1,20 +1,34 @@
 export default function Section05() {
   return (
-    <section className="min-h-screen h-screen snap-start">
-      <div className=" text-center text-white h-screen w-screen flex items-center">
-        <div className="xl:h-1/2 w-screen flex flex-col justify-between">
-          <h1 className="text-2xl xl:text-7xl md:text-5xl font-bold tracking-widest">
-            Front developer
-          </h1>
-          <h1 className="text-2xl xl:text-7xl md:text-5xl font-bold tracking-widest">
-            Server developer
-          </h1>
-          <h1 className="text-2xl xl:text-7xl md:text-5xl font-bold tracking-widest">
-            Ai solution
-          </h1>
-          <h1 className="text-2xl xl:text-7xl md:text-5xl font-bold tracking-widest">
-            Design/Consulting
-          </h1>
+    <section className="min-h-screen h-screen " data-aos="fade-up">
+      <div className=" text-center text-white h-screen w-screen flex items-center justify-center">
+        <div className="flex flex-wrap">
+          <div className="p-4 lg:w-1/2 sm:my-20 my-0">
+            <div className="h-full flex sm:flex-row flex-col items-center sm:justify-center justify-center text-center sm:text-left">
+              <h2 className="title-font font-medium text-6xl">
+                Front developer
+              </h2>
+            </div>
+          </div>
+          <div className="p-4 lg:w-1/2 sm:my-20 my-0">
+            <div className="h-full flex sm:flex-row flex-col items-center sm:justify-center justify-center text-center sm:text-left">
+              <h2 className="title-font font-medium text-6xl">
+                Server developer
+              </h2>
+            </div>
+          </div>
+          <div className="p-4 lg:w-1/2 sm:my-20 my-0">
+            <div className="h-full flex sm:flex-row flex-col items-center sm:justify-center justify-center text-center sm:text-left">
+              <h2 className="title-font font-medium text-6xl">Ai solution</h2>
+            </div>
+          </div>
+          <div className="p-4 lg:w-1/2 sm:my-20 my-0">
+            <div className="h-full flex sm:flex-row flex-col items-center sm:justify-center justify-center text-center sm:text-left">
+              <h2 className="title-font font-medium text-6xl">
+                Design/Consulting
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
     </section>
