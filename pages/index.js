@@ -1,19 +1,20 @@
-import React, { useEffect, useState, useRef } from "react";
-import { create } from "@lottiefiles/lottie-interactivity";
+import React, { useEffect, useState, useRef, useMemo } from "react";
+import lottie from "lottie-web";
+import Lottie from "react-lottie-player";
+import Seo from "../components/Seo";
 
 import Section01 from "../components/pages/Section01";
 import Section02 from "../components/pages/Section02";
 import Section03 from "../components/pages/Section03";
-import Section04 from "../components/pages/Section04";
 import Section05 from "../components/pages/Section05";
 import SectionLast from "../components/pages/SectionLast";
-import Seo from "../components/Seo";
 
-import lottieJson from "/public/section01.json";
+import lottieJson from "/public/masterSection.json";
+import Lottie01 from "/public/Lottie01.json";
 import Indicator from "../components/layout/Indicator";
 
 export default function Home() {
-  const lottieRef = React.useRef(null);
+  const lottieRef = useRef(null);
   // const [page, setPage] = useState(1);
 
   // function onScroll() {
@@ -21,69 +22,86 @@ export default function Home() {
   //     top: (page - 1) * window.innerHeight,
   //     behavior: "smooth",
   //   });
-  //   console.log(page);
   // }
 
-  React.useEffect(() => {
-    const lottiefiles = lottieRef.current;
-    lottiefiles?.addEventListener("load", () => {
-      create({
-        player: "#firstLottie",
-        mode: "scroll",
-        actions: [
-          {
-            visibility: [0.5, 1.0],
-            type: "play",
-            frames: [0, 100],
-          },
-        ],
-      });
-    });
-  }, []);
+  // const onMove = (e) => {
+  //   e.preventDefault();
+  //   onScroll();
+  //   if (e.deltaY > 0) {
+  //     if (page == 6) return;
+  //     setPage(page + 1);
+  //   } else if (e.deltaY < 0) {
+  //     if (page == 1) return;
+  //     setPage(page - 1);
+  //   }
+  // };
 
   // useEffect(() => {
-  //   const onMove = (e) => {
-  //     e.preventDefault();
-  //     onScroll();
-  //     if (e.deltaY > 0) {
-  //       if (page == 7) return;
-  //       setPage(page + 1);
-  //     } else if (e.deltaY < 0) {
-  //       if (page == 1) return;
-  //       setPage(page - 1);
-  //     }
+  //   const timer = setInterval(() => {
+  //     window.addEventListener("wheel", onMove, {
+  //       passive: false,
+  //     });
   //     console.log(page);
+  //   }, 1000);
+  //   return () => {
+  //     clearInterval(timer);
+  //     window.removeEventListener("wheel", onMove, {
+  //       passive: false,
+  //     });
   //   };
-  //   window.addEventListener("wheel", onMove, { passive: false });
-  //   return () =>
-  //     window.removeEventListener("wheel", onMove, { passive: false });
-  // }, [onScroll]);
+  // }, [onMove]);
+
+  useEffect(() => {
+    const anim = lottie.loadAnimation({
+      container: lottieRef?.current,
+      renderer: "svg",
+      loop: false,
+      autoplay: false,
+      animationData: lottieJson,
+    });
+
+    function animatebodymovin(duration) {
+      const scrollPosition = window.scrollY;
+      const maxFrames = anim.totalFrames;
+
+      const frame = (maxFrames / 100) * (scrollPosition / (duration / 100));
+
+      anim.goToAndStop(frame, true);
+    }
+    const onLottie = () => {
+      console.log("Scrolling");
+      animatebodymovin(window.innerHeight * 5);
+    };
+
+    document.addEventListener("scroll", onLottie);
+    return () => {
+      anim.destroy();
+      document.removeEventListener("scroll", onLottie);
+    };
+  }, []);
+
   return (
-    <div className="bg-black">
-      <div className="fixed top-0 left-0">
-        <lottie-player
-          ref={lottieRef}
-          id="firstLottie"
-          src="https://lottie.host/83e751c6-038f-452f-b7cf-aa0fb55028de/MxYc4Nc1rU.json"
-          speed="1"
-          loop
-          autoplay
-          style={{ width: "100vw" }}
-        ></lottie-player>
+    <>
+      <Seo title="Home" />
+      <div className="bg-black">
+        <div className="fixed top-0 left-0 w-screen h-screen overflow-hidden object-cover object-center">
+          {/* <Lottie
+            loop
+            animationData={Lottie01}
+            play
+            className={"w-screen" + `${page === 1 ? " block" : " hidden"}`}
+          /> */}
+          <div ref={lottieRef} className="min-w-full min-h-full" />
+        </div>
+        <div className="z-10 relative">
+          <Section01 className="snap-center" />
+          <Section02 className="snap-center" />
+          <Section03 className="snap-center" />
+          <Section05 className="snap-center" />
+          <SectionLast className="snap-center" />
+          {/* <Indicator page={page} /> */}
+        </div>
       </div>
-      <div className="z-10 relative">
-        <Seo title="Home" />
-        <Section01 />
-        <Section02 />
-        <Section03 />
-        <Section04 />
-        <Section05 />
-        <SectionLast />
-        {/* <Indicator page={page} /> */}
-      </div>
-    </div>
+    </>
   );
 }
-
-// export async function getServerSideProps() {}
-// snap-mandatory snap-y overflow-y-scroll h-screen
