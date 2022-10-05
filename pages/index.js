@@ -118,11 +118,11 @@ export default function Home() {
           />
         </div>
         <div className="z-10 relative">
-          <Section01 className="snap-center" />
-          <Section02 className="snap-center" />
-          <Section03 className="snap-center" />
-          <Section05 className="snap-center" />
-          <SectionLast className="snap-center" />
+          <Section01 />
+          <Section02 />
+          <Section03 />
+          <Section05 />
+          <SectionLast />
           <Indicator page={page} />
         </div>
       </div>
