@@ -1,8 +1,8 @@
 import CEO from "/public/image/ceo.svg";
 import CTO from "/public/image/cto.svg";
 import CCO from "/public/image/cco.svg";
-import Advice1 from "/public/image/Advice1.svg";
-import Advice2 from "/public/image/Advice2.svg";
+import Advice1 from "/public/image/advice1.svg";
+import Advice2 from "/public/image/advice2.svg";
 import Frontend from "/public/image/frontend.svg";
 
 export default function Members() {
