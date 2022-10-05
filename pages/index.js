@@ -114,7 +114,7 @@ export default function Home() {
           />
           <div
             ref={lottieRef}
-            className="min-w-screen min-h-screen lg:block hidden fixed top-0"
+            className="min-w-full lg:block hidden fixed top-0"
           />
         </div>
         <div className="z-10 relative">
