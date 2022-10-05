@@ -9,7 +9,10 @@ export default function Section04() {
     setHandleColor(color);
   };
   return (
-    <section className="min-h-screen h-screen body-font " data-aos="fade-up">
+    <section
+      className="min-h-screen h-screen body-font justify-center"
+      data-aos="fade-up"
+    >
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center justify-center text-center sticky top-0 mb-40">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 text-left text-white">
           <h1 className="mb-8 leading-relaxed mt-10 title-font sm:text-4xl text-3xl font-medium">

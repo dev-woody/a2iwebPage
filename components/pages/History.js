@@ -17,6 +17,7 @@ export default function History() {
           </h1>
           <h1 className="flex-grow sm:pr-16 text-2xl sm:text-4xl font-medium title-font text-white">
             A2I Inc.는
+            <br className="sm:hidden block" />
             <span className="text-primary-color"> 꾸준히 한걸음씩 성장</span>
             해나가고 있습니다.
           </h1>

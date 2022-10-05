@@ -3,9 +3,9 @@ import Header from "./Header";
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <div className="min-w-screen">
       <Header />
-      <div>{children}</div>
+      <div className="min-w-screen">{children}</div>
       <Footer />
     </div>
   );

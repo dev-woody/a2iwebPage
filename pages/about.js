@@ -6,7 +6,7 @@ import Seo from "../components/Seo";
 
 export default function About() {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen overflow-x-hidden">
       <Seo title="About" />
       <AboutUs />
       <AboutDetail />

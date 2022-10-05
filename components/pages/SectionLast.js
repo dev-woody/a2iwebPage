@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function SectionLast() {
   return (
     <section
-      className="flex min-h-screen h-screen flex-col items-center justify-center body-font "
+      className="flex min-h-screen h-screen flex-col items-center body-font justify-center"
       data-aos="fade-up"
     >
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container sm:px-5 py-24 sm:mx-auto mx-0 px-0">
         <div className="flex flex-col items-center justify-center lg:w-3/5 mx-auto text-white text-center h-full w-screen">
           <h1 className="md:text-5xl text-2xl font-medium title-font ">
             라이프 스타일 솔루션을
@@ -14,7 +14,8 @@ export default function SectionLast() {
             경험하세요.
           </h1>
           <p className="leading-relaxed mt-4 mb-4">
-            UI/UX 기획부터 앱 개발까지... 혁신적인 고객경험을 제공합니다.
+            UI/UX 기획부터 앱 개발까지...
+            <br className="sm:hidden block" /> 혁신적인 고객경험을 제공합니다.
           </p>
           <h2 className="text-xs text-primary-color tracking-widest font-medium title-font mb-1">
             이메일 : ceo.alexpark@a2ikorea.com
