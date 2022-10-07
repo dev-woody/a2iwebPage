@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Logo from "/public/Logo.svg";
 
 export default function Header() {
-  const [isScroll, setIsScroll] = useState(true);
+  const [isScroll, setIsScroll] = useState(false);
   const onScroll = (e) => {
     // e.preventDefault();
     if (e.deltaY > 0) {
