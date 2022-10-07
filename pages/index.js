@@ -14,9 +14,11 @@ import lottieJson from "/public/masterSection.json";
 import smallCercel from "/public/smallCercel.json";
 import Lottie01 from "/public/Lottie01.json";
 import lastSection from "/public/lastSection.json";
+import Loading from "../components/Loading";
 
 export default function Home() {
   const lottieRef = useRef(null);
+  const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [isTop, setisTop] = useState(false);
   const [isLast, setisLast] = useState(false);
@@ -40,6 +42,10 @@ export default function Home() {
       onScroll(page - 1);
     }
   };
+
+  useEffect(() => {
+    setLoading(false);
+  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -105,46 +111,54 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="overflow-x-hidden snap-y snap-mandatory overflow-y-scroll bg-black">
+    <div>
       <Seo title="Home" />
-      <div className="fixed h-screen overflow-hidden flex justify-center items-center top-0 left-0 w-screen">
-        <Lottie
-          loop
-          animationData={Lottie01}
-          play
-          className={
-            "w-screen fixed top-0 hidden" + `${isTop ? " xl:block z-10" : ""}`
-          }
-        />
+      {loading ? (
+        <Loading />
+      ) : (
+        <div className="overflow-x-hidden snap-y snap-mandatory overflow-y-scroll bg-black">
+          <div className="fixed h-screen overflow-hidden flex justify-center items-center top-0 left-0 w-screen">
+            <Lottie
+              loop
+              animationData={Lottie01}
+              play
+              className={
+                "w-screen fixed top-0 hidden" +
+                `${isTop ? " xl:block z-10" : ""}`
+              }
+            />
 
-        <Lottie
-          loop
-          animationData={lastSection}
-          play
-          className={
-            "w-screen fixed top-0 hidden" + `${isLast ? " xl:block z-10" : ""}`
-          }
-        />
-        <Lottie
-          loop
-          animationData={smallCercel}
-          play
-          className="xl:hidden block z-0"
-        />
-        <div
-          ref={lottieRef}
-          className="min-w-full xl:block hidden fixed top-0"
-        />
-      </div>
-      <Section01 />
-      <Section02 />
-      <Section03 />
-      <Section05 />
-      <div className="h-screen  xl:block hidden" />
-      <div className="h-screen  xl:block hidden" />
-      <div className="h-screen  xl:block hidden" />
-      <div className="h-screen  xl:block hidden" />
-      <SectionLast />
+            <Lottie
+              loop
+              animationData={lastSection}
+              play
+              className={
+                "w-screen fixed top-0 hidden" +
+                `${isLast ? " xl:block z-10" : ""}`
+              }
+            />
+            <Lottie
+              loop
+              animationData={smallCercel}
+              play
+              className="xl:hidden block z-0"
+            />
+            <div
+              ref={lottieRef}
+              className="min-w-full xl:block hidden fixed top-0"
+            />
+          </div>
+          <Section01 />
+          <Section02 />
+          <Section03 />
+          <Section05 />
+          <div className="h-screen  xl:block hidden" />
+          <div className="h-screen  xl:block hidden" />
+          <div className="h-screen  xl:block hidden" />
+          <div className="h-screen  xl:block hidden" />
+          <SectionLast />
+        </div>
+      )}
     </div>
   );
 }

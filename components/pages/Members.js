@@ -52,7 +52,7 @@ export default function Members() {
               어플리케이션 프로그램 개발
             </p>
           </div>
-          <CTO className="sm:w-72 sm:h-72 h-24 w-24 sm:ml-40 inline-flex items-center justify-center flex-shrink-0" />
+          <CTO className="sm:w-72 sm:h-72 h-24 w-24 order-first sm:ml-40 inline-flex items-center justify-center flex-shrink-0" />
         </div>
         <div className="flex items-center justify-center lg:w-full mx-auto pb-10 mb-20 sm:flex-row flex-col">
           <COO className="sm:w-72 sm:h-72 h-24 w-24 sm:mr-40 inline-flex items-center justify-center flex-shrink-0" />
@@ -74,12 +74,12 @@ export default function Members() {
         </div>
         <div className="flex sm:flex-row flex-col sm:my-20 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
           <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-            <Frontend className="sm:w-48 sm:h-48 w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0" />
+            <Frontend className="sm:w-48 sm:h-48 h-24 w-24 inline-flex items-center justify-center mb-5 flex-shrink-0" />
             <div className="flex-grow">
-              <h2 className="sm:text-3xl text-xs title-font font-medium mb-3">
+              <h2 className="sm:text-3xl text-lg title-font font-medium mb-3">
                 Frontend Dev, UI/UX Designer
               </h2>
-              <p className="leading-relaxed sm:text-base text-xs">
+              <p className="leading-relaxed sm:text-base text-base">
                 React, Next.js 개발자
                 <br />
                 일러스트, 포토샵 등 편집툴 사용
@@ -89,12 +89,12 @@ export default function Members() {
             </div>
           </div>
           <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-            <Advice1 className="sm:w-48 sm:h-48 w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0" />
+            <Advice1 className="sm:w-48 sm:h-48 h-24 w-24 inline-flex items-center justify-center mb-5 flex-shrink-0" />
             <div className="flex-grow">
-              <h2 className="sm:text-3xl text-xs title-font font-medium mb-3">
+              <h2 className="sm:text-3xl text-lg title-font font-medium mb-3">
                 인테리어 자문 1
               </h2>
-              <p className="leading-relaxed sm:text-base text-xs">
+              <p className="leading-relaxed sm:text-base text-base">
                 홍익대학교 공간디자인 박사
                 <br />
                 공간디자인학회
@@ -104,12 +104,12 @@ export default function Members() {
             </div>
           </div>
           <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-            <Advice2 className="sm:w-48 sm:h-48 w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0" />
+            <Advice2 className="sm:w-48 sm:h-48 h-24 w-24 inline-flex items-center justify-center mb-5 flex-shrink-0" />
             <div className="flex-grow">
-              <h2 className="sm:text-3xl text-xs title-font font-medium mb-3">
+              <h2 className="sm:text-3xl text-lg title-font font-medium mb-3">
                 인테리어 자문 2
               </h2>
-              <p className="leading-relaxed sm:text-base text-xs">
+              <p className="leading-relaxed sm:text-base text-base">
                 대형 건설사 인테리어 설계 리더
                 <br />
                 홍익대학교 공간디자인 박사 과정
