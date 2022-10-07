@@ -55,19 +55,19 @@ export default function Home() {
     });
   }, []);
 
-  // useEffect(() => {
-  //   // const timer = setInterval(() => {
-  //   window.addEventListener("wheel", onMove, {
-  //     passive: false,
-  //   });
-  //   // }, 500);
-  //   return () => {
-  //     // clearInterval(timer);
-  //     window.removeEventListener("wheel", onMove, {
-  //       passive: false,
-  //     });
-  //   };
-  // }, [onMove]);
+  useEffect(() => {
+    // const timer = setInterval(() => {
+    window.addEventListener("wheel", onMove, {
+      passive: false,
+    });
+    // }, 500);
+    return () => {
+      // clearInterval(timer);
+      window.removeEventListener("wheel", onMove, {
+        passive: false,
+      });
+    };
+  }, [onMove]);
 
   useEffect(() => {
     const anim = lottie.loadAnimation({
