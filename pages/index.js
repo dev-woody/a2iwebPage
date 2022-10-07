@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import lottie from "lottie-web";
 import Lottie from "react-lottie-player";
+import AOS from "aos";
 import Seo from "../components/Seo";
 
 import Section01 from "../components/pages/Section01";
@@ -12,12 +13,15 @@ import SectionLast from "../components/pages/SectionLast";
 import lottieJson from "/public/masterSection.json";
 import smallCercel from "/public/smallCercel.json";
 import Lottie01 from "/public/Lottie01.json";
-import Indicator from "../components/layout/Indicator";
+import lastSection from "/public/lastSection.json";
 
-export default function Home() {
+export default function Home({ masterHeight }) {
   const lottieRef = useRef(null);
   const [page, setPage] = useState(1);
   const [isTop, setisTop] = useState(false);
+  const [isLast, setisLast] = useState(false);
+
+  console.log(masterHeight);
 
   function onScroll(pageNow) {
     window.scrollTo({
@@ -29,15 +33,21 @@ export default function Home() {
   const onMove = (e) => {
     e.preventDefault();
     if (e.deltaY > 0) {
-      if (page == 6) return;
+      if (page == 7) return;
       setPage(page + 1);
       onScroll(page + 1);
     } else if (e.deltaY < 0) {
       if (page == 1) return;
-      onScroll(page - 1);
       setPage(page - 1);
+      onScroll(page - 1);
     }
   };
+
+  useEffect(() => {
+    AOS.init({
+      anchorPlacement: "bottom-bottom",
+    });
+  });
 
   useEffect(() => {
     setisTop(true);
@@ -74,6 +84,9 @@ export default function Home() {
       if (window.scrollY == 0) {
         setisTop(true);
       } else setisTop(false);
+      if (window.scrollY >= window.innerHeight * 6 - 10) {
+        setisLast(true);
+      } else setisLast(false);
       const scrollPosition = window.scrollY;
       const maxFrames = anim.totalFrames;
 
@@ -83,7 +96,7 @@ export default function Home() {
     }
     const onLottie = () => {
       console.log("Scrolling");
-      animatebodymovin(window.innerHeight * 5);
+      animatebodymovin(window.innerHeight * 6 + 10);
     };
 
     document.addEventListener("scroll", onLottie);
@@ -94,38 +107,51 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden snap-y snap-mandatory overflow-y-scroll">
       <Seo title="Home" />
-      <div className="bg-black">
-        <div className="fixed h-screen flex justify-center items-center top-0 left-0 w-screen">
-          <Lottie
-            loop
-            animationData={Lottie01}
-            play
-            className={
-              "w-screen fixed top-0 hidden" + `${isTop ? " lg:block z-10" : ""}`
-            }
-          />
-          <Lottie
-            loop
-            animationData={smallCercel}
-            play
-            className="lg:hidden block"
-          />
-          <div
-            ref={lottieRef}
-            className="min-w-full lg:block hidden fixed top-0"
-          />
-        </div>
-        <div className="z-10 relative">
-          <Section01 />
-          <Section02 />
-          <Section03 />
-          <Section05 />
-          <SectionLast />
-          <Indicator page={page} />
-        </div>
+      <div className="fixed h-screen overflow-hidden flex justify-center items-center top-0 left-0 w-screen">
+        <Lottie
+          loop
+          animationData={Lottie01}
+          play
+          className={
+            "w-screen fixed top-0 hidden" + `${isTop ? " xl:block z-10" : ""}`
+          }
+        />
+
+        <Lottie
+          loop
+          animationData={lastSection}
+          play
+          className={
+            "w-screen fixed top-0 hidden" + `${isLast ? " xl:block z-10" : ""}`
+          }
+        />
+        <Lottie
+          loop
+          animationData={smallCercel}
+          play
+          className="xl:hidden block"
+        />
+        <div
+          ref={lottieRef}
+          className="min-w-full xl:block hidden fixed top-0"
+        />
       </div>
+      <Section01 />
+      <Section02 />
+      <div className="xl:hidden block">
+        <Section03 />
+      </div>
+      <div className="xl:hidden block">
+        <Section05 />
+      </div>
+      <div className="h-screen  xl:block hidden" />
+      <div className="h-screen  xl:block hidden" />
+      <div className="h-screen  xl:block hidden" />
+      <div className="h-screen  xl:block hidden" />
+      <SectionLast />
+      {/* <Indicator page={page} /> */}
     </div>
   );
 }

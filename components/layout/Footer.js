@@ -3,7 +3,7 @@ import Logo from "/public/LogoGray.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 text-gray-600 body-font bottom-0 relative">
+    <footer className="bg-gray-100 text-gray-600 body-font relative bottom-0">
       <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
         <Link href="/">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">

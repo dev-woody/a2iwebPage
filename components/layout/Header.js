@@ -1,13 +1,40 @@
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import Logo from "/public/Logo.svg";
 
 export default function Header() {
+  const [isScroll, setIsScroll] = useState(true);
+  const onScroll = (e) => {
+    // e.preventDefault();
+    if (e.deltaY > 0) {
+      setIsScroll(true);
+      console.log("스크롤");
+    } else if (e.deltaY < 0) {
+      setIsScroll(false);
+      console.log("스크롤");
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("wheel", onScroll, { passive: false });
+    return () => {
+      window.removeEventListener("wheel", onScroll, { passive: false });
+    };
+  }, [onScroll]);
   return (
-    <header className="text-white body-font w-screen drop-shadow-md fixed top-0 z-50">
+    <header
+      className={
+        "text-white body-font w-screen drop-shadow-md fixed z-50 transition-all" +
+        `${isScroll ? "  -top-20" : " top-0 bg-white text-black"}`
+      }
+    >
       <div className="container mx-auto flex sm:flex-wrap p-5 flex-col sm:flex-row items-center">
         <Link href="/">
-          <a className="flex title-font font-medium items-center hover:text-primary-color mb-4 md:mb-0">
+          <a
+            className="flex title-font font-medium items-center mb-4 md:mb-0"
+            style={{ color: "#912845" }}
+          >
             <Logo className="ml-3 mr-3 h-8" />
+            Artificial to Intelligence
           </a>
         </Link>
         <nav className="md:ml-auto md:w-1/4 flex items-center text-base sm:justify-between ease-in-out">

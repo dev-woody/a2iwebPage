@@ -7,11 +7,6 @@ import AOS from "aos";
 import Script from "next/script";
 
 export default function App({ Component, pageProps }) {
-  useEffect(() => {
-    AOS.init({
-      anchorPlacement: "top-bottom",
-    });
-  });
   return (
     <Layout>
       <Script
