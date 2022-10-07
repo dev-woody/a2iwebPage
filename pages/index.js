@@ -33,7 +33,7 @@ export default function Home({ masterHeight }) {
   const onMove = (e) => {
     e.preventDefault();
     if (e.deltaY > 0) {
-      if (page == 7) return;
+      if (page == 8) return;
       setPage(page + 1);
       onScroll(page + 1);
     } else if (e.deltaY < 0) {
