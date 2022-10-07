@@ -24,7 +24,7 @@ export default function Header() {
     <header
       className={
         "text-white body-font w-screen drop-shadow-md fixed z-50 transition-all" +
-        `${isScroll ? "  -top-20" : " top-0 bg-white text-black"}`
+        `${isScroll ? "  -top-40" : " top-0 bg-white text-black"}`
       }
     >
       <div className="container mx-auto flex sm:flex-wrap p-5 flex-col sm:flex-row items-center">

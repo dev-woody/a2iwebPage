@@ -15,14 +15,14 @@ export default function History() {
           <h1 className="title-font sm:text-6xl text-3xl mb-4 font-medium text-white text-left">
             History
           </h1>
-          <h1 className="flex-grow sm:pr-16 text-2xl sm:text-4xl font-medium title-font text-white">
+          <h1 className="flex-grow sm:pr-16 text-xl sm:text-4xl font-medium title-font text-white">
             A2I Inc.는
             <br className="sm:hidden block" />
             <span className="text-primary-color"> 꾸준히 한걸음씩 성장</span>
             해나가고 있습니다.
           </h1>
         </div>
-        <div className="flex flex-col flex-wrap lg:py-6 w-full items-end lg:text-left text-center">
+        <div className="flex flex-col flex-wrap lg:py-6 w-full items-end lg:text-left text-left">
           <div className="flex flex-col mb-10 lg:items-start items-center">
             <div className="flex-grow sm:mr-20 mr-0">
               {historys.map((history, index) => {

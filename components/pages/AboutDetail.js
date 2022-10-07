@@ -13,8 +13,8 @@ export default function AboutDetail() {
             <Gradation className="blur" />
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"></div>
-          <div className="lg:flex-grow md:w-1/2 md:mr-20 mr-0 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font sm:text-6xl text-3xl mb-4 mt-10 font-medium text-gray-900">
+          <div className="lg:flex-grow md:w-1/2 md:mr-20 mr-0 flex flex-col md:items-start md:text-left items-start text-left">
+            <h1 className="title-font sm:text-6xl text-2xl mb-4 mt-10 font-medium text-gray-900">
               혁신과 함께하는 기업,
               <span className="text-secondary-color">A2I Inc.</span>
             </h1>
@@ -71,7 +71,7 @@ export default function AboutDetail() {
                   <h1 className="title-font text-lg sm:text-4xl font-medium text-gray-900 mb-3">
                     MISSION
                   </h1>
-                  <p className="leading-relaxed mb-3 sm:text-2xl">
+                  <p className="leading-relaxed mb-3 sm:text-2xl text-md">
                     AI solution for Improvement and Infuence. 인공지능 솔루션
                     개발을 통해서 인류 삶의 질을 향상 시키고, 사회문화에 영향을
                     미친다.

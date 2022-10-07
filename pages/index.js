@@ -15,13 +15,11 @@ import smallCercel from "/public/smallCercel.json";
 import Lottie01 from "/public/Lottie01.json";
 import lastSection from "/public/lastSection.json";
 
-export default function Home({ masterHeight }) {
+export default function Home() {
   const lottieRef = useRef(null);
   const [page, setPage] = useState(1);
   const [isTop, setisTop] = useState(false);
   const [isLast, setisLast] = useState(false);
-
-  console.log(masterHeight);
 
   function onScroll(pageNow) {
     window.scrollTo({
@@ -57,19 +55,19 @@ export default function Home({ masterHeight }) {
     });
   }, []);
 
-  useEffect(() => {
-    // const timer = setInterval(() => {
-    window.addEventListener("wheel", onMove, {
-      passive: false,
-    });
-    // }, 1000);
-    return () => {
-      // clearInterval(timer);
-      window.removeEventListener("wheel", onMove, {
-        passive: false,
-      });
-    };
-  }, [onMove]);
+  // useEffect(() => {
+  //   // const timer = setInterval(() => {
+  //   window.addEventListener("wheel", onMove, {
+  //     passive: false,
+  //   });
+  //   // }, 500);
+  //   return () => {
+  //     // clearInterval(timer);
+  //     window.removeEventListener("wheel", onMove, {
+  //       passive: false,
+  //     });
+  //   };
+  // }, [onMove]);
 
   useEffect(() => {
     const anim = lottie.loadAnimation({
@@ -96,7 +94,7 @@ export default function Home({ masterHeight }) {
     }
     const onLottie = () => {
       console.log("Scrolling");
-      animatebodymovin(window.innerHeight * 6 + 10);
+      animatebodymovin(window.innerHeight * 6);
     };
 
     document.addEventListener("scroll", onLottie);
@@ -107,7 +105,7 @@ export default function Home({ masterHeight }) {
   }, []);
 
   return (
-    <div className="overflow-x-hidden snap-y snap-mandatory overflow-y-scroll">
+    <div className="overflow-x-hidden snap-y snap-mandatory overflow-y-scroll bg-black">
       <Seo title="Home" />
       <div className="fixed h-screen overflow-hidden flex justify-center items-center top-0 left-0 w-screen">
         <Lottie
@@ -131,7 +129,7 @@ export default function Home({ masterHeight }) {
           loop
           animationData={smallCercel}
           play
-          className="xl:hidden block"
+          className="xl:hidden block z-0"
         />
         <div
           ref={lottieRef}
@@ -140,18 +138,13 @@ export default function Home({ masterHeight }) {
       </div>
       <Section01 />
       <Section02 />
-      <div className="xl:hidden block">
-        <Section03 />
-      </div>
-      <div className="xl:hidden block">
-        <Section05 />
-      </div>
+      <Section03 />
+      <Section05 />
       <div className="h-screen  xl:block hidden" />
       <div className="h-screen  xl:block hidden" />
       <div className="h-screen  xl:block hidden" />
       <div className="h-screen  xl:block hidden" />
       <SectionLast />
-      {/* <Indicator page={page} /> */}
     </div>
   );
 }

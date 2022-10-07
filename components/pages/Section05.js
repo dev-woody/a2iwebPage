@@ -1,40 +1,37 @@
 export default function Section05() {
   return (
-    <section
-      className="min-h-screen h-screen justify-center"
-      data-aos="fade-up"
-    >
-      <div className=" text-center text-white h-screen w-screen flex items-center justify-center">
-        <div className="flex sm:flex-wrap sm:flex-row flex-col">
-          <div className="p-4 lg:w-1/2 sm:my-20 my-0">
-            <div className="h-full flex sm:flex-row flex-col items-center sm:justify-center justify-center text-center sm:text-left">
-              <h2 className="title-font font-medium sm:text-6xl">
-                Front developer
-              </h2>
-            </div>
-          </div>
-          <div className="p-4 lg:w-1/2 sm:my-20 my-0">
-            <div className="h-full flex sm:flex-row flex-col items-center sm:justify-center justify-center text-center sm:text-left">
-              <h2 className="title-font font-medium sm:text-6xl">
-                Server developer
-              </h2>
-            </div>
-          </div>
-          <div className="p-4 lg:w-1/2 sm:my-20 my-0">
-            <div className="h-full flex sm:flex-row flex-col items-center sm:justify-center justify-center text-center sm:text-left">
-              <h2 className="title-font font-medium sm:text-6xl">
-                Ai solution
-              </h2>
-            </div>
-          </div>
-          <div className="p-4 lg:w-1/2 sm:my-20 my-0">
-            <div className="h-full flex sm:flex-row flex-col items-center sm:justify-center justify-center text-center sm:text-left">
-              <h2 className="title-font font-medium sm:text-6xl">
-                Design/Consulting
-              </h2>
-            </div>
-          </div>
-        </div>
+    <section className=" container mx-auto flex px-5 py-24 md:flex-row flex-col items-center justify-center xl:hidden z-10">
+      <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 text-left text-white z-10">
+        <h1
+          className="title-font sm:text-7xl text-3xl mb-8 font-medium text-primary-color"
+          data-aos="fade-up"
+        >
+          Our Team
+        </h1>
+        <p
+          className="mb-8 sm:text-2xl text-1xl leading-relaxed"
+          data-aos="fade-up"
+        >
+          Front developer
+        </p>
+        <p
+          className="mb-8 sm:text-2xl text-1xl leading-relaxed"
+          data-aos="fade-up"
+        >
+          Server developer
+        </p>
+        <p
+          className="mb-8 sm:text-2xl text-1xl leading-relaxed"
+          data-aos="fade-up"
+        >
+          AI developer
+        </p>
+        <p
+          className="mb-8 sm:text-2xl text-1xl leading-relaxed"
+          data-aos="fade-up"
+        >
+          UI/UX Designer
+        </p>
       </div>
     </section>
   );

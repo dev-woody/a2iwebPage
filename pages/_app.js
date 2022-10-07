@@ -2,8 +2,6 @@ import Layout from "../components/layout/Layout";
 import "../styles/globals.css";
 import "aos/dist/aos.css";
 
-import { useEffect } from "react";
-import AOS from "aos";
 import Script from "next/script";
 
 export default function App({ Component, pageProps }) {
