@@ -49,7 +49,7 @@ export default function Home() {
         className="blurImg1 blurCntl8 2xl:right-2/3 right-1/2 top-96"
       />
       <img
-        src="onehand.png"
+        src="oneHand.png"
         className="onehand 2xl:top-24 top-20 2xl:-right-10 -right-28 2xl:w-1/4 w-1/3"
       />
       <img
