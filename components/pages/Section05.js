@@ -1,38 +1,22 @@
+import Lottie from "react-lottie-player";
+import lottieJson from "/public/data.json";
+
 export default function Section05() {
   return (
-    <section className=" container mx-auto flex px-5 py-24 md:flex-row flex-col items-center justify-center xl:hidden z-10">
-      <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 text-left text-white z-10">
-        <h1
-          className="title-font sm:text-7xl text-3xl mb-8 font-medium text-primary-color"
-          data-aos="fade-up"
-        >
-          Our Team
+    <section className="section05 container max-h-screen h-screen mx-auto flex px-5 py-24 items-center justify-start flex-col">
+      <div className="text-center lg:w-2/3 w-full 2xl:mb-28 mb-10">
+        <h1 className="title-font sm:text-7xl text-3xl mb-4 font-bold text-white">
+          Technology.
         </h1>
-        <p
-          className="mb-8 sm:text-2xl text-1xl leading-relaxed"
-          data-aos="fade-up"
-        >
-          Front developer
-        </p>
-        <p
-          className="mb-8 sm:text-2xl text-1xl leading-relaxed"
-          data-aos="fade-up"
-        >
-          Server developer
-        </p>
-        <p
-          className="mb-8 sm:text-2xl text-1xl leading-relaxed"
-          data-aos="fade-up"
-        >
-          AI developer
-        </p>
-        <p
-          className="mb-8 sm:text-2xl text-1xl leading-relaxed"
-          data-aos="fade-up"
-        >
-          UI/UX Designer
-        </p>
+        <p className="mb-8 leading-relaxed text-white">[ 기술 ]</p>
       </div>
+      <Lottie
+        loop
+        animationData={lottieJson}
+        play
+        className="2xl:mb-10 mb-0 object-cover object-center rounded hands"
+      />
+      <img src="plane.svg" alt="plane" className="planeCtrl" />
     </section>
   );
 }

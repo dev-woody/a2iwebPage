@@ -4,8 +4,119 @@
 
 body {
   -ms-overflow-style: none;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.Bwireframe {
+  position: fixed;
+  opacity: 1;
+  width: 480px;
+}
+
+.Swireframe {
+  position: fixed;
+  right: 700px;
+  top: 200px;
+  opacity: 1;
+  width: 170px;
+}
+
+.planeImg {
+  position: fixed;
+  width: 100vw;
+  left: 0px;
+  top: calc(100vh - 250px);
+}
+
+.plane2 {
+  opacity: 0;
+}
+
+.blurImg1 {
+  position: fixed;
+  width: 480px;
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.blurCntl7 {
+  right: 700px;
+  top: 200px;
+  opacity: 1;
+  width: 170px;
+  opacity: 0;
+}
+
+.blurCntl8 {
+  opacity: 1;
+  width: 350px;
+  opacity: 0;
+}
+
+.onehand {
+  position: fixed;
+  opacity: 0;
+}
+
+.moveCercle {
+  position: fixed;
+  opacity: 1;
+  width: 400px;
+  opacity: 0;
+}
+
+.cubeImg {
+  opacity: 0;
+  width: 30vw;
+}
+
+.hands {
+  width: 30vw;
+}
+
+.blurImg2 {
+  position: fixed;
+  opacity: 1;
+  width: 1000px;
+  opacity: 0;
+  z-index: 0;
+  filter: blur(20px);
+}
+
+.blurCntl3 {
+  left: 30vw;
+  bottom: -10vh;
+}
+
+.blurCntl4 {
+  right: 30vw;
+  bottom: 0vh;
+}
+
+.blurCntl5 {
+  right: -300px;
+  top: -500px;
+}
+
+.blurCntl6 {
+  left: -300px;
+  bottom: -400px;
+}
+
+.planeCtrl {
+  width: 100vw;
+  left: 0px;
 }

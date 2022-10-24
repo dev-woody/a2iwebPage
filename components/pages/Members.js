@@ -37,7 +37,7 @@ export default function Members() {
           </div>
         </div>
         <div className="flex items-center justify-center lg:w-full mx-auto pb-10 mb-20 sm:flex-row flex-col">
-          <div className=" sm:text-right text-center mt-6 sm:mt-0">
+          <div className="flex-glow sm:text-right text-center mt-6 sm:mt-0">
             <h2 className=" text-lg sm:text-5xl title-font font-medium mb-2 ">
               CTO
             </h2>
@@ -52,7 +52,7 @@ export default function Members() {
               어플리케이션 프로그램 개발
             </p>
           </div>
-          <CTO className="sm:w-72 sm:h-72 h-24 w-24 order-first sm:ml-40 inline-flex items-center justify-center flex-shrink-0" />
+          <CTO className="sm:w-72 sm:h-72 h-24 w-24 sm:order-none order-first sm:ml-40 inline-flex items-center justify-center flex-shrink-0" />
         </div>
         <div className="flex items-center justify-center lg:w-full mx-auto pb-10 mb-20 sm:flex-row flex-col">
           <COO className="sm:w-72 sm:h-72 h-24 w-24 sm:mr-40 inline-flex items-center justify-center flex-shrink-0" />

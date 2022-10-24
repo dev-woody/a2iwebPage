@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Footer from "../components/layout/Footer";
+import Header from "../components/layout/Header";
 import Seo from "../components/Seo";
 
 export default function Contact() {
@@ -11,7 +13,8 @@ export default function Contact() {
   return (
     <div>
       <Seo title="Contact" />
-      <section className="text-gray-600 body-font relative min-h-screen flex items-center">
+      <Header />
+      <section className="text-gray-600 body-font relative h-screen flex items-center">
         <div className="absolute inset-0 bg-gray-300">
           <iframe
             width="100%"
@@ -90,6 +93,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

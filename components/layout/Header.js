@@ -1,8 +1,10 @@
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Logo from "/public/Logo.svg";
 
 export default function Header() {
+  const ref = useRef(null);
+  const headerRef = ref.current;
   const [isScroll, setIsScroll] = useState(false);
   const onScroll = (e) => {
     // e.preventDefault();
@@ -23,17 +25,16 @@ export default function Header() {
   return (
     <header
       className={
-        "text-white body-font w-screen drop-shadow-md fixed z-50 transition-all" +
-        `${isScroll ? "  -top-40" : " top-0 bg-white text-black"}`
+        " body-font w-screen drop-shadow-md fixed z-50 transition-all bg-white text-black"
       }
     >
       <div className="container mx-auto flex sm:flex-wrap p-5 flex-col sm:flex-row items-center">
         <Link href="/">
           <a
-            className="flex title-font font-medium items-center mb-4 md:mb-0"
-            style={{ color: "#912845" }}
+            className="flex title-font font-medium items-center mb-4 md:mb-0 text-text-white"
+            // style={{ color: "#912845" }}
           >
-            <Logo className="ml-3 mr-3 h-8" />
+            <Logo className="ml-3 mr-3 h-8 text-white" />
             Artificial to Intelligence
           </a>
         </Link>
