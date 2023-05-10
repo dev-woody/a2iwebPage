@@ -1,7 +1,4 @@
 import Seo from "../components/Seo";
-import * as THREE from "three";
-import { gsap } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import Section01 from "../components/pages/Section01";
 import Section02 from "../components/pages/Section02";
@@ -13,14 +10,10 @@ import SectionLast from "../components/pages/SectionLast";
 import ThreeCanvas from "../components/pages/ThreeCanvas";
 import { useEffect } from "react";
 import eventFnc from "../components/Event";
-import Footer from "../components/layout/Footer";
 import MainHeader from "../components/layout/MainHeader";
 import MainFooter from "../components/layout/MainFooter";
 
 export default function Home() {
-  const clock = new THREE.Clock();
-  const time = clock.getElapsedTime();
-
   useEffect(() => {
     eventFnc();
   }, []);
