@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <header
       className={
-        " body-font w-screen drop-shadow-md fixed z-50 transition-all bg-white text-black"
+        " body-font w-screen drop-shadow-md sticky z-50 transition-all bg-white text-black"
       }
     >
       <div className="container mx-auto flex sm:flex-wrap p-5 flex-col sm:flex-row items-center">
