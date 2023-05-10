@@ -3,41 +3,45 @@ import Logo from "/public/LogoGray.svg";
 
 export default function Footer() {
   return (
-    <footer class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+    <footer className="text-gray-600 body-font">
+      <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+          <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <Logo className="ml-3 w-5" />
-            <span class="ml-3 text-xl">A2I.Inc</span>
+            <span className="ml-3 text-xl">A2I.Inc</span>
           </a>
-          <p class="mt-2 text-sm text-gray-500">Artifical to Intelligence</p>
+          <p className="mt-2 text-sm text-gray-500">
+            Artifical to Intelligence
+          </p>
         </div>
-        <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <Link href="/about">
-              <a class="text-gray-500 hover:text-gray-800">회사설명</a>
+              <a className="text-gray-500 hover:text-gray-800">회사설명</a>
             </Link>
           </div>
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <Link href="/brand">
-              <a class="text-gray-500 hover:text-gray-800">브랜드</a>
+              <a className="text-gray-500 hover:text-gray-800">브랜드</a>
             </Link>
           </div>
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <Link href="/contact">
-              <a class="text-gray-500 hover:text-gray-800">연락하기</a>
+              <a className="text-gray-500 hover:text-gray-800">연락하기</a>
             </Link>
           </div>
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <Link href="/policy/collect">
-              <a class="text-gray-500 hover:text-gray-800">개인정보처리방침</a>
+              <a className="text-gray-500 hover:text-gray-800">
+                개인정보처리방침
+              </a>
             </Link>
           </div>
         </div>
       </div>
-      <div class="bg-gray-100">
-        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p class="text-gray-500 text-sm text-center sm:text-left">
+      <div className="bg-gray-100">
+        <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p className="text-gray-500 text-sm text-center sm:text-left">
             © 2021 A2I Inc. —
             <a
               rel="noopener noreferrer"
