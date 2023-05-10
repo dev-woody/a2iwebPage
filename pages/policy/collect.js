@@ -19,10 +19,10 @@ export default function Collect() {
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
             <Link href="">
-              <a class="mr-5 hover:text-gray-900">이용약관</a>
+              <a className="mr-5 hover:text-gray-900">이용약관</a>
             </Link>
             <Link href="/policy/collect">
-              <a class="mr-5 hover:text-gray-900">개인정보 처리방침</a>
+              <a className="mr-5 hover:text-gray-900">개인정보 처리방침</a>
             </Link>
             {/* <a className="mr-5 hover:text-gray-900">Third Link</a>
             <a className="mr-5 hover:text-gray-900">Fourth Link</a> */}
@@ -33,10 +33,11 @@ export default function Collect() {
         <div className="container px-5 py-24 mx-auto">
           <div className="xl:w-3/4 lg:w-3/4 w-full mx-auto text-left ">
             <p>
-              &#60; 에이투아이(주) &#62;('www.inpal.co.kr'이하 'INPAL')은(는)
-              「개인정보 보호법」 제30조에 따라 정보주체의 개인정보를 보호하고
-              이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여
-              다음과 같이 개인정보 처리방침을 수립·공개합니다.
+              &#60; 에이투아이(주) &#62;(&#39;www.inpal.co.kr&#39;이하
+              &#39;INPAL&#39;)은(는) 「개인정보 보호법」 제30조에 따라
+              정보주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고
+              원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보
+              처리방침을 수립·공개합니다.
               <br />○ 이 개인정보처리방침은 2023년 4월 1부터 적용됩니다.
             </p>
             <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
@@ -44,11 +45,11 @@ export default function Collect() {
               제1조(개인정보의 처리 목적)
             </h2>
             <h2 className="text-gray-900 font-medium title-font tracking-wider text-md mb-10">
-              &#60; 에이투아이(주) &#62;('www.inpal.co.kr'이하 'INPAL')은(는)
-              다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는
-              개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며 이용 목적이
-              변경되는 경우에는 「개인정보 보호법」 제18조에 따라 별도의 동의를
-              받는 등 필요한 조치를 이행할 예정입니다.
+              &#60; 에이투아이(주) &#62;(&#39;www.inpal.co.kr&#39;이하
+              &#39;INPAL&#39;)은(는) 다음의 목적을 위하여 개인정보를 처리합니다.
+              처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지
+              않으며 이용 목적이 변경되는 경우에는 「개인정보 보호법」 제18조에
+              따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.
             </h2>
             <p className="leading-relaxed text-md mb-10">
               1. 홈페이지 회원가입 및 관리 회원 가입의사 확인, 회원제 서비스
