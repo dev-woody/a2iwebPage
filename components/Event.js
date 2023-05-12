@@ -201,7 +201,7 @@ export default function eventFnc() {
 
   //  subCanvas
   gsap.to(".Futuristic", {
-    yPercent: -100,
+    yPercent: -90,
     xPercent: -80,
     scrollTrigger: {
       trigger: ".section04",
@@ -211,7 +211,7 @@ export default function eventFnc() {
   });
 
   gsap.to(".Personalized", {
-    yPercent: -100,
+    yPercent: -90,
     xPercent: 80,
     scrollTrigger: {
       trigger: ".section04",
@@ -221,7 +221,7 @@ export default function eventFnc() {
   });
 
   gsap.to(".Convenient", {
-    yPercent: 80,
+    yPercent: 70,
     xPercent: -80,
     scrollTrigger: {
       trigger: ".section04",
@@ -231,7 +231,7 @@ export default function eventFnc() {
   });
 
   gsap.to(".Connecting", {
-    yPercent: 80,
+    yPercent: 70,
     xPercent: 80,
     scrollTrigger: {
       trigger: ".section04",

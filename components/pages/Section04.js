@@ -24,8 +24,8 @@ const Planet = ({ src, main, sub, className }) => {
 
 export default function Section04() {
   return (
-    <section className="section04 relative container max-h-screen h-screen mx-auto flex lg:px-10 px-0 py-24 justify-between items-center flex-col">
-      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white place-items-start">
+    <section className="section04 relative container max-h-screen h-screen mx-auto flex lg:px-10 px-0 lg:py-24 py-12 justify-between items-center flex-col">
+      <h1 className="title-font sm:text-4xl lg:text-3xl text-xl mb-4 font-medium text-white place-items-start">
         라이브 스타일 플랫폼,
       </h1>
       <Planet
@@ -52,14 +52,14 @@ export default function Section04() {
         sub="[연결하는]"
         className="Connecting"
       />
-      <div className="bg-black mb-4 lg:rounded-full md:rounded-5rem rounded-0 lg:w-4/5 w-full h-4/5 overflow-hidden">
+      <div className="bg-black mb-4 lg:rounded-full md:rounded-5rem rounded-0 lg:w-4/5 w-full lg:h-4/5 h-5/6 overflow-hidden">
         <ThreeCanvas />
       </div>
       <div className="text-center lg:w-2/3 w-full flex flex-col justify-center items-center">
-        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+        <h1 className="title-font sm:text-4xl lg:text-3xl text-xl mb-4 font-medium text-white">
           의식주를 아우르다.
         </h1>
-        <p className="mb-8 lx:px-10 px-5 leading-relaxed text-white text-ms ">
+        <p className="mb-8 lx:px-10 px-20 leading-relaxed text-white text-xs ">
           에이투아이는 인공지능 솔루션을 기반으로
           <br />
           고객이 원하는 사회문화 기술을 구현한다는 비전을 가지고 설립되었습니다.
