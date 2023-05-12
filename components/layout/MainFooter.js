@@ -12,61 +12,61 @@ export default function MainFooter() {
     };
   }, []);
   return (
-    <div className=" body-font fixed top-0 w-screen h-screen">
-      <div className="2xl:p-10 p-5 pt-0 mx-auto mb-20 box-border flex justify-end items-end sm:flex-row flex-col w-screen h-screen">
-        <div className="flex flex-col text-white justify-start items-start">
-          <div className="fixed bottom-32 2xl:text-2xl text-xl flex flex-col text-right justify-end items-end 2xl:w-20 w-10">
-            <h1 className="pr-2">01</h1>
+    <div className=" body-font fixed bottom-0 w-screen">
+      <div className="lg:pb-10 pb-3 box-border flex justify-between items-end w-full ">
+        <div className="flex flex-col text-white">
+          <div className="lg:text-base text-xs flex flex-col text-left justify-start">
+            <h1 className="2xl:pl-8 pl-4">01</h1>
             <div
               className={
-                "h-0.5 2xl:mb-10 mb-5 bg-white  ease-in-out" +
-                `${page === 0 ? " w-40" : " w-0"}`
+                "h-0.5 lg:mb-10 mb-5 bg-white  ease-in-out" +
+                `${page === 0 ? " lg:w-14 w-9" : " w-0"}`
               }
             />
-            <h1 className="pr-2">02</h1>
+            <h1 className="2xl:pl-8 pl-4">02</h1>
             <div
               className={
-                "h-0.5 2xl:mb-10 mb-5 bg-white  ease-in-out" +
-                `${page === 1 ? " w-40" : " w-0"}`
+                "h-0.5 lg:mb-10 mb-5 bg-white  ease-in-out" +
+                `${page === 1 ? " lg:w-14 w-9" : " w-0"}`
               }
             />
-            <h1 className="pr-2">03</h1>
+            <h1 className="2xl:pl-8 pl-4">03</h1>
             <div
               className={
-                "h-0.5 2xl:mb-10 mb-5 bg-white  ease-in-out" +
-                `${page === 2 ? " w-40" : " w-0"}`
+                "h-0.5 lg:mb-10 mb-5 bg-white  ease-in-out" +
+                `${page === 2 ? " lg:w-14 w-9" : " w-0"}`
               }
             />
-            <h1 className="pr-2">04</h1>
+            <h1 className="2xl:pl-8 pl-4">04</h1>
             <div
               className={
-                "h-0.5 2xl:mb-10 mb-5 bg-white  ease-in-out" +
-                `${page === 3 ? " w-40" : " w-0"}`
+                "h-0.5 lg:mb-10 mb-5 bg-white  ease-in-out" +
+                `${page === 3 ? " lg:w-14 w-9" : " w-0"}`
               }
             />
-            <h1 className="pr-2">05</h1>
+            <h1 className="2xl:pl-8 pl-4">05</h1>
             <div
               className={
-                "h-0.5 2xl:mb-10 mb-5 bg-white  ease-in-out" +
-                `${page === 4 ? " w-40" : " w-0"}`
+                "h-0.5 lg:mb-10 mb-5 bg-white  ease-in-out" +
+                `${page === 4 ? " lg:w-14 w-9" : " w-0"}`
               }
             />
-            <h1 className="pr-2">06</h1>
+            <h1 className="2xl:pl-8 pl-4">06</h1>
             <div
               className={
-                "h-0.5 2xl:mb-10 mb-5 bg-white  ease-in-out" +
-                `${page === 5 ? " w-40" : " w-0"}`
+                "h-0.5 lg:mb-10 mb-5 bg-white  ease-in-out" +
+                `${page === 5 ? " lg:w-14 w-9" : " w-0"}`
               }
             />
           </div>
-          <p className="text-white 2xl:text-xl text-md">
+          <div className="text-white lg:text-xl text-xs lg:pl-8 pl-5 justify-end">
             2021 A2I.inc All Rights Reserved
-          </p>
+          </div>
         </div>
-        <div className="inline-flex sm:ml-auto  justify-center sm:justify-start text-white">
-          <span className="pl-20 pt-20 -rotate-90 2xl:text-xl text-md">
+        <div className="text-white lg:pb-16 lg:pr-0 pr-5 ">
+          <div className="lg:rotate-270 lg:text-xl text-xs">
             Powerd by a2i.inc
-          </span>
+          </div>
         </div>
       </div>
     </div>

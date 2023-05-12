@@ -1,6 +1,6 @@
 export default function Section03() {
   return (
-    <section className="section03 max-h-screen h-screen container mx-auto flex px-5 py-24 items-center justify-between flex-col overflow-hidden">
+    <section className="section03 max-h-screen h-screen container mx-auto flex px-5 py-24 items-center lg:justify-between justify-center flex-col overflow-hidden z-30">
       <img src="cube2D.svg" alt="cube" className="cubeImg mb-20" />
       <div className="text-center lg:w-2/3 w-full">
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">

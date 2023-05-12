@@ -14,6 +14,12 @@ module.exports = {
           to: { strokeDashoffet: 0 },
         },
       },
+      rotate: {
+        270: "270deg",
+      },
+      borderRadius: {
+        "5rem": "5rem",
+      },
       animation: {
         linear: "linear 1s ease-in-out",
       },
